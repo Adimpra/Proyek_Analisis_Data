@@ -1,1 +1,1 @@
-Deploy dashboard ke dalam streamlit cloud.
+https://adimpra-data-analysis-project.streamlit.app/
