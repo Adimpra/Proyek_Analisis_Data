@@ -35,15 +35,15 @@ page = st.sidebar.radio('Go to', ['Overview', 'Product Categories Analysis', 'Sa
 def load_data():
     try:
         # Load all datasets
-        customers_df = pd.read_csv('../Data/customers_dataset.csv')
-        geolocation_df = pd.read_csv('../Data/geolocation_dataset.csv')
-        order_items_df = pd.read_csv('../Data/order_items_dataset.csv')
-        order_payments_df = pd.read_csv('../Data/order_payments_dataset.csv')
-        order_reviews_df = pd.read_csv('../Data/order_reviews_dataset.csv')
-        orders_df = pd.read_csv('../Data/orders_dataset.csv')
-        product_category_translation_df = pd.read_csv('../Data/product_category_name_translation.csv')
-        products_df = pd.read_csv('../Data/products_dataset.csv')
-        sellers_df = pd.read_csv('../Data/sellers_dataset.csv')
+        customers_df = pd.read_csv('Data/customers_dataset.csv')
+        geolocation_df = pd.read_csv('Data/geolocation_dataset.csv')
+        order_items_df = pd.read_csv('Data/order_items_dataset.csv')
+        order_payments_df = pd.read_csv('Data/order_payments_dataset.csv')
+        order_reviews_df = pd.read_csv('Data/order_reviews_dataset.csv')
+        orders_df = pd.read_csv('Data/orders_dataset.csv')
+        product_category_translation_df = pd.read_csv('Data/product_category_name_translation.csv')
+        products_df = pd.read_csv('Data/products_dataset.csv')
+        sellers_df = pd.read_csv('Data/sellers_dataset.csv')
         
         # Clean the data
         # 1. Convert dates in orders_df to datetime
