@@ -21,14 +21,29 @@ The project uses multiple interconnected datasets:
 - `Proyek_Analisis_Data.ipynb`: Main Jupyter notebook containing all analysis
 - `README.md`: Project documentation
 
-## Setup Instructions
-1. Ensure you have Python 3.x installed
-2. Install required libraries:
-   ```
-   pip install pandas numpy matplotlib seaborn plotly scikit-learn jupyter
-   ```
-3. Clone this repository or download the files
-4. Open the Jupyter notebook: `jupyter notebook Proyek_Analisis_Data.ipynb`
+
+## E-Commerce Data Analysis Dashboard
+
+### Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.12.3
+conda activate main-ds
+pip install -r requirements.txt
+```
+
+### Setup Environment - Shell/Terminal
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+
+### Run Streamlit App
+```
+streamlit run dashboard.py
+```
 
 ## Analysis Workflow
 1. **Data Loading**: Import all datasets from CSV files
